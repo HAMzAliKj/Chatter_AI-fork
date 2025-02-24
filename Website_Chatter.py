@@ -28,7 +28,7 @@ def app():
         st.session_state.processed = False   
 
     url = st.text_input("Enter Website Url To Chat")
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key='AIzaSyDvK6SW6TykrJFcEsen2RRxpkGWevagp90')
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key='AIzaSyC2rQzwSsl4a-sZnHWK_Kop7tlb53c3vRI')
 
     if url and url != st.session_state.last_processed_url:
         st.session_state.retriever = ""
@@ -122,4 +122,5 @@ def app():
             except Exception as e:
                 st.error(f"Error generating response: {e}")
 
-app()                
+if __name__ == "__main__":
+    app()
