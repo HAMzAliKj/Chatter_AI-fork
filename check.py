@@ -19,7 +19,7 @@ def apps():
     BACKEND_URL = "https://web-production-29de.up.railway.app/transcript"
 
 # this comment is from another branch
-
+# this is another
     def fetch_transcript(video_id):
         try:
             # Call the backend to fetch the transcript
